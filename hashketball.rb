@@ -137,7 +137,9 @@ def shoe_size(player_name)
   # stats[:shoe]
 end
 
-
+def player_stats(player_name)
+  find_stats_for_player(player_name)
+end
 
 # def shoe_size(player_name)
 #   player_stats(player_name)[:shoe]
