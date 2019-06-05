@@ -147,7 +147,7 @@ end
 
 def player_numbers(team_name)
   new_arr = []
-  game_hash[:team_name].collect do |team|
+  game_hash[team_name].collect do |team|
     new_arr << team[:players][:number]
   end
   new_arr
