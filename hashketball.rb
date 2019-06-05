@@ -144,7 +144,7 @@ end
 # end
 
 def num_points_scored(player_name)
-  player_stats(player_name)[:points]
+  get_all_players[player_name][:points]
 end
 
 
