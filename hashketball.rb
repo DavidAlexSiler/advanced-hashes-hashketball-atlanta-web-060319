@@ -129,26 +129,24 @@ def find_stats_for_player(player_name)
   get_all_players[player_name]
 end
 
-def shoe_size(player_name)
-  # get_all_players(player_name)[:shoe]
-  get_all_players[player_name][:shoe]
 
-  # stats = find_stats_for_player(player_name)
-  # stats[:shoe]
+
+
+
+def shoe_size(player_name)
+  get_all_players[player_name][:shoe]
 end
 
 def player_stats(player_name)
   find_stats_for_player(player_name)
 end
 
-# def shoe_size(player_name)
-#   player_stats(player_name)[:shoe]
-# end
-
 def num_points_scored(player_name)
   get_all_players[player_name][:points]
 end
 
+def player_numbers
+  get_all_players[player_name][:number]
 
 def team_colors(team_name) 
 game_hash.each do |team, keys|
