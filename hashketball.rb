@@ -146,7 +146,7 @@ def num_points_scored(player_name)
 end
 
 def player_numbers
-  get_all_players[player_name][:number]
+  game_hash[:home][:number]
 end
 
 def team_colors(team_name) 
