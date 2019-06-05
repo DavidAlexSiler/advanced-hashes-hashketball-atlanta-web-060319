@@ -125,14 +125,23 @@ def get_all_players
   home_players.merge(away_players)
 end
 
-def player_stats(player_name)
-   get_all_players[(player_name)]
+def find_stats_for_player(player_name)
+  get_all_players[player_name]
 end
-
 
 def shoe_size(player_name)
-  player_stats(player_name)[:shoe]
+  # get_all_players(player_name)[:shoe]
+  get_all_players[player_name][:shoe]
+
+  # stats = find_stats_for_player(player_name)
+  # stats[:shoe]
 end
+
+
+
+# def shoe_size(player_name)
+#   player_stats(player_name)[:shoe]
+# end
 
 def num_points_scored(player_name)
   player_stats(player_name)[:points]
