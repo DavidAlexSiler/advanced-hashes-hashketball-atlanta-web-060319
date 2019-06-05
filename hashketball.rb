@@ -146,7 +146,10 @@ def num_points_scored(player_name)
 end
 
 def player_numbers(team_name)
-  game_hash[team_name][:players][:number]
+  new_arr = []
+  game_hash[:team_name].collect do |team|
+    new_arr << team[:players][:number]
+  
 end
 
 def team_colors(team_name) 
