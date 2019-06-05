@@ -126,7 +126,7 @@ def get_all_players
 end
 
 def player_stats(player_name)
-   get_all_players(player_name)
+   get_all_players[(player_name)]
 end
 
 
